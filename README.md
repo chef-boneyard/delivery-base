@@ -1,4 +1,4 @@
 # delivery-base
 
-TODO: Enter the cookbook description here.
+Sets up the base things for a node to be use in Chef Delivery.
 
