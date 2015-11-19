@@ -1,13 +1,22 @@
 ---
 driver:
-  name: vagrant
+  name: ec2
+  region: us-west-2
+  availability_zone: a
+  instance_type: t2.micro
+  image_id: ami-5189a661
+  subnet_id: subnet-19ac017c
+  tags:
+    Name: <%= ENV['KITCHEN_INSTANCE_NAME'] || 'delivery-base-kitchen' %>
+
+transport:
+  ssh_key: <%= ENV['KITCHEN_EC2_SSH_KEY_PATH'] %>
 
 provisioner:
   name: chef_zero
 
 platforms:
   - name: ubuntu-14.04
-  - name: centos-7.1
 
 suites:
   - name: default
