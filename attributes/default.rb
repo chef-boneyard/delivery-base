@@ -14,4 +14,10 @@
 # limitations under the License.
 #
 
-default['delivery-base']['push-client']['version'] = nil
+include_attribute 'push-jobs'
+
+case node['platform_family']
+when 'windows'
+  default['push_jobs']['package_url']      = 'https://opscode-private-chef.s3.amazonaws.com/windows/2008r2/x86_64/opscode-push-jobs-client-windows-1.1.5-1.windows.msi'
+  default['push_jobs']['package_checksum'] = '411520e6a2e3038cd018ffacee0e76e37e7badd1aa84de03f5469c19e8d6c576'
+end

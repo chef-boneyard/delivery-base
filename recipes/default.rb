@@ -14,7 +14,4 @@
 # limitations under the License.
 #
 
-chef_ingredient 'push-client' do
-  version node['delivery-base']['push-client']['version']
-  action :install
-end
+include_recipe 'push-jobs'
