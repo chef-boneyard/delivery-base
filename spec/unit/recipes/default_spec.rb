@@ -17,8 +17,8 @@ describe 'delivery-base::default' do
       expect { chef_run }.to_not raise_error
     end
 
-    it 'installs chef ingredient push-client' do
-      expect(chef_run).to install_chef_ingredient 'push-client'
+    it 'depends on push-jobs' do
+      expect(chef_run).to include_recipe 'push-jobs'
     end
   end
 
