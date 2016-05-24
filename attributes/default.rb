@@ -16,6 +16,8 @@
 
 include_attribute 'push-jobs'
 
+override['push_jobs']['allow_unencrypted'] = true
+
 case node['platform_family']
 when 'windows'
   default['push_jobs']['package_url']      = 'https://opscode-private-chef.s3.amazonaws.com/windows/2008r2/x86_64/opscode-push-jobs-client-windows-1.1.5-1.windows.msi'
