@@ -5,7 +5,7 @@ license 'Apache 2.0'
 description 'Delivery base cookbook'
 long_description 'Sets up the base things for a node to be use in Chef Delivery'
 
-version '0.2.1'
+version '0.2.2'
 
 source_url 'https://github.com/chef-cookbooks/delivery-base'
 issues_url 'https://github.com/chef-cookbooks/delivery-base/issues'
