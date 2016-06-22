@@ -14,4 +14,5 @@
 # limitations under the License.
 #
 
+include_recipe 'apt::default'
 include_recipe 'push-jobs'
