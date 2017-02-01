@@ -20,6 +20,6 @@ override['push_jobs']['allow_unencrypted'] = true
 
 case node['platform_family']
 when 'windows'
-  default['push_jobs']['package_url']      = 'https://opscode-private-chef.s3.amazonaws.com/windows/2008r2/x86_64/opscode-push-jobs-client-windows-1.1.5-1.windows.msi'
-  default['push_jobs']['package_checksum'] = '411520e6a2e3038cd018ffacee0e76e37e7badd1aa84de03f5469c19e8d6c576'
+  default['push_jobs']['package_url']      = 'https://packages.chef.io/files/stable/push-jobs-client/2.1.4/windows/2012/push-jobs-client-2.1.4-1-x86.msi'
+  default['push_jobs']['package_checksum'] = '3b979f8d362738c8ac126ace0e80122a4cbc53425d5f8cf9653cdd79eca16d62'
 end
