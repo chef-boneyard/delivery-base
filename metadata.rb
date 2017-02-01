@@ -15,4 +15,5 @@ supports 'redhat', '>= 6.5'
 supports 'centos', '>= 6.5'
 supports 'windows'
 
+depends 'apt'
 depends 'push-jobs'
