@@ -1,3 +1,11 @@
+**Umbrella Project**: [Automate](https://github.com/chef/chef-oss-practices/blob/master/projects/chef-automate.md)
+
+**Project State**: [Deprecated](https://github.com/chef/chef-oss-practices/blob/master/repo-management/repo-states.md#deprecated)
+
+**Issues [Response Time Maximum](https://github.com/chef/chef-oss-practices/blob/master/repo-management/repo-states.md)**: None
+
+**Pull Request [Response Time Maximum](https://github.com/chef/chef-oss-practices/blob/master/repo-management/repo-states.md)**: None
+
 # delivery-base
 
 Sets up the base things for a node to be use in Chef Delivery.
