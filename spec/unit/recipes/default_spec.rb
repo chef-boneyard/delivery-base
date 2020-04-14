@@ -1,15 +1,15 @@
 #
-# Cookbook Name:: delivery-base
+# Cookbook:: delivery-base
 # Spec:: default
 #
-# Copyright (c) 2015 The Authors, All Rights Reserved.
+# Copyright:: (c) 2015 The Authors, All Rights Reserved.
 
 require 'spec_helper'
 
 describe 'delivery-base::default' do
   context 'When we run on a supported platform' do
     let(:chef_run) do
-      runner = ChefSpec::SoloRunner.new(platform: 'centos', version: '6.5')
+      runner = ChefSpec::SoloRunner.new(platform: 'centos', version: '6')
       runner.converge(described_recipe)
     end
 

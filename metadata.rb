@@ -1,9 +1,8 @@
 name 'delivery-base'
 maintainer 'Chef Delivery Team'
 maintainer_email 'delivery-team@chef.io'
-license 'Apache 2.0'
+license 'Apache-2.0'
 description 'Delivery base cookbook'
-long_description 'Sets up the base things for a node to be use in Chef Delivery'
 
 version '0.2.3'
 
